@@ -1,4 +1,4 @@
-from py_sonarcloud import sum
+from py_sonarcloud.sum import sum
 
 
 def test_sum():
