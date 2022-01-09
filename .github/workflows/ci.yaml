@@ -24,7 +24,7 @@ jobs:
 
       - name: Run tests
         run: |
-          poetry run python -m pytest --cov=py_sonarcloud tests/ --cov-report=xml
+          poetry run python -m pytest --cov=py_sonarcloud --cov-report xml:cov.xml
 
       - name: SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@master
